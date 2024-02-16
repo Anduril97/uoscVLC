@@ -18,7 +18,7 @@ Features:
     -   Loading external subtitles.
     -   Selecting stream quality.
     -   Quick directory and playlist navigation.
--   All menus are instantly searchable. Just start typing.
+-   All menus are instantly searchable, just start typing.
 -   Mouse scroll wheel does multiple things depending on what is the cursor hovering over:
     -   Timeline: seek by `timeline_step` seconds per scroll.
     -   Volume bar: change volume by `volume_step` per scroll.
