@@ -73,7 +73,11 @@ double click ---- toggle fullscreen
 
 ## Navigation
 
-These bindings are active when any **uoscVLC** menu is open (main menu, playlist, load/select subtitles,...):
+- Scroll up/down in the middle of the window for volume +/-
+- Scroll over Playback speed UI to increase/decrease speed
+- Right click over any UI items to reset (volume resets to 100, speed resets to 1)
+
+The below bindings are active when any **uoscVLC** menu is open (right-click menu, playlist, load/select subtitles,...):
 
 -   `up`, `down` - Select previous/next item.
 -   `left`, `right` - Back to parent menu or close, activate item.
