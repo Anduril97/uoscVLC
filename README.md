@@ -1,7 +1,7 @@
 <div align="center">
 	<h1>uoscVLC</h1>
 	<p>
-		A pre-packaged custom fork of the minimalist proximity-based UI for <a href="https://mpv.io">MPV player by tomasklaen</a>.
+		A pre-packaged custom fork of the minimalist proximity-based UI for <a href="https://mpv.io">MPV player</a> by tomasklaen.
 	</p>
 	<br/>
 	<a href="https://user-images.githubusercontent.com/47283320/195073006-bfa72bcc-89d2-4dc7-b8dc-f3c13273910c.webm"><img src="https://github.com/tomasklaen/uosc/assets/47283320/9f99f2ae-3b65-4935-8af3-8b80c605f022" alt="Preview screenshot"></a>
@@ -30,15 +30,12 @@ Features:
 -   Transform chapters into timeline ranges (the red portion of the timeline in the preview).
 -   And a lot of useful options and commands to bind keys to.
 
-[Changelog](https://github.com/tomasklaen/uosc/releases).
-
-
 1. **How to install/update**
 
 Locate your MPV folder. It is typically located at `~/.config/mpv/` on Linux/MacOS or `\%APPDATA%\mpv\` on Windows. See the [Files section](https://mpv.io/manual/master/#files) in mpv's manual for more info.
 
 > [!NOTE]
-> If you have data in this folder already, please delete it or move it elsewhere (unless you know what you're doing?). This applies when updating from an older version of MPVClean as well.
+> If you have data in this folder already, please delete it or move it elsewhere (unless you know what you're doing?). This applies when updating from an older version of uoscVLC as well.
 
 Extract the contents of the zip file found at [Releases](https://github.com/Anduril97/uoscVLC/releases) into the above-mentioned folder. Just the contents, your folder should look like this:
 
@@ -46,7 +43,7 @@ Extract the contents of the zip file found at [Releases](https://github.com/Andu
 
 That's it!
    
-2. **OPTIONAL**: To have thumbnails in timeline, install [thumbfast](https://github.com/po5/thumbfast). No other step necessary, **uosc** integrates with it seamlessly.
+2. **OPTIONAL**: To have thumbnails in timeline, install [thumbfast](https://github.com/po5/thumbfast). No other step necessary, **uoscVLC** integrates with it seamlessly.
 
 3. **OPTIONAL**: If the UI feels sluggish/slow while playing video, you can remedy this _a bit_ by placing this in your `mpv.conf`:
 
