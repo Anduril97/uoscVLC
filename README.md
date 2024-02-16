@@ -1,5 +1,5 @@
 <div align="center">
-	<h1>uoscVLC - Uncomplicated MPV</h1>
+	<h1>uoscVLC - hassle-free MPV</h1>
 	<p>
 		A pre-packaged custom fork of <a href="https://github.com/tomasklaen/uosc">uosc</a> that mirrors a VLC-style interface while using <a href="https://mpv.io">MPV player</a>.
 	</p>
