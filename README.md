@@ -1,7 +1,7 @@
 <div align="center">
 	<h1>uoscVLC - hassle-free MPV</h1>
 	<p>
-		A pre-packaged custom fork of <a href="https://github.com/tomasklaen/uosc">uosc</a> that mirrors a VLC-style interface wiith the enhancements of <a href="https://mpv.io">MPV player</a>.
+		A pre-packaged custom fork of <a href="https://github.com/tomasklaen/uosc">uosc</a> that mirrors a VLC-style interface with the enhancements of <a href="https://mpv.io">MPV player</a>.
 	</p>
 	<br/>
 	<a href="https://user-images.githubusercontent.com/47283320/195073006-bfa72bcc-89d2-4dc7-b8dc-f3c13273910c.webm"><img src="https://github.com/tomasklaen/uosc/assets/47283320/9f99f2ae-3b65-4935-8af3-8b80c605f022" alt="Preview screenshot"></a>
