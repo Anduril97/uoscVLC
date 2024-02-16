@@ -11,8 +11,6 @@ Features:
 
 -   UI elements hide and show based on their proximity to cursor instead of every time mouse moves. This provides 100% control over when you see the UI and when you don't. Click on the preview above to see it in action.
 -   When timeline is unused, it can minimize itself into a small discrete progress bar.
--   Build your own context menu with nesting support by editing your `input.conf` file.
--   Configurable controls bar.
 -   Fast and efficient thumbnails with [thumbfast](https://github.com/po5/thumbfast) integration.
 -   UIs for:
     -   Selecting subtitle/audio/video track.
@@ -28,7 +26,6 @@ Features:
     -   Just hovering video with no UI widget below cursor: your configured wheel bindings from `input.conf`.
 -   Right click on volume or speed elements to reset them.
 -   Transform chapters into timeline ranges (the red portion of the timeline in the preview).
--   And a lot of useful options and commands to bind keys to.
 
 # How to install/update
 
