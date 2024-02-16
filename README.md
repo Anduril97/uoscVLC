@@ -66,6 +66,8 @@ down arrow ------ add volume -5
 t --------------- MPV window Stay on Top on/off (if you using Wayland this will not work, use Alt+Space and choose Always on top)
 q --------------- quit (MPV default)
 f --------------- toggle Fullscreen (MPV default)
+mbtn_right ------ menu (right-click)
+mbtn_left  ------ Play/Pause (left-click); can also hold and drag window
 ```
 
 ## Navigation
