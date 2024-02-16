@@ -1,7 +1,7 @@
 <div align="center">
-	<h1>uosc</h1>
+	<h1>uoscVLC</h1>
 	<p>
-		Feature-rich minimalist proximity-based UI for <a href="https://mpv.io">MPV player</a>.
+		A pre-packaged custom fork of the minimalist proximity-based UI for <a href="https://mpv.io">MPV player by tomasklaen</a>.
 	</p>
 	<br/>
 	<a href="https://user-images.githubusercontent.com/47283320/195073006-bfa72bcc-89d2-4dc7-b8dc-f3c13273910c.webm"><img src="https://github.com/tomasklaen/uosc/assets/47283320/9f99f2ae-3b65-4935-8af3-8b80c605f022" alt="Preview screenshot"></a>
@@ -32,67 +32,23 @@ Features:
 
 [Changelog](https://github.com/tomasklaen/uosc/releases).
 
-## Install
 
-1. These commands will install or update **uosc** and place a default `uosc.conf` file into `script-opts` if it doesn't exist already.
+1. **How to install/update**
 
-    ### Windows
+Locate your MPV folder. It is typically located at `~/.config/mpv/` on Linux/MacOS or `\%APPDATA%\mpv\` on Windows. See the [Files section](https://mpv.io/manual/master/#files) in mpv's manual for more info.
 
-    _Optional, needed to run a remote script the first time if not enabled already:_
+> [!NOTE]
+> If you have data in this folder already, please delete it or move it elsewhere (unless you know what you're doing?). This applies when updating from an older version of MPVClean as well.
 
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-    ```
+Extract the contents of the zip file found at [Releases](https://github.com/Anduril97/uoscVLC/releases) into the above-mentioned folder. Just the contents, your folder should look like this:
 
-    Run:
+![MPV Config folder](https://github.com/Anduril97/MPVClean/assets/100987393/0d88f36e-0480-4127-a4ee-04dca91f871f)
 
-    ```powershell
-    irm https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/windows.ps1 | iex
-    ```
+That's it!
+   
+2. **OPTIONAL**: To have thumbnails in timeline, install [thumbfast](https://github.com/po5/thumbfast). No other step necessary, **uosc** integrates with it seamlessly.
 
-    _**NOTE**: If this command is run in an mpv installation directory with `portable_config`, it'll install there instead of `AppData`._
-
-    _**NOTE2**: The downloaded archive might trigger false positives in some antiviruses. This is explained in [FAQ below](#why-is-the-release-reported-as-malicious-by-some-antiviruses)._
-
-    ### Linux & macOS
-
-    _Requires **curl** and **unzip**._
-
-    ```sh
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)"
-    ```
-
-    On Linux, we try to detect what package manager variant of the config location you're using, with precedent being:
-
-    ```
-    ~/.var/app/io.mpv.Mpv     (flatpak)
-    ~/snap/mpv
-    ~/snap/mpv-wayland
-    ~/.config/mpv
-    ```
-
-    To install into any of these locations, make sure the ones above it don't exist.
-
-    ### Manual
-
-    1. Download & extract [`uosc.zip`](https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip) into your mpv config directory. (_See the [documentation of mpv config locations](https://mpv.io/manual/master/#files)._)
-
-    2. If you don't have it already, download & extract [`uosc.conf`](https://github.com/tomasklaen/uosc/releases/latest/download/uosc.conf) into `script-opts` inside your mpv config directory. It contains all of uosc options along with their default values and documentation.
-
-2. **OPTIONAL**: `mpv.conf` tweaks to better integrate with **uosc**:
-
-    ```config
-    # uosc provides seeking & volume indicators (via flash-timeline and flash-volume commands)
-    # if you decide to use them, you don't need osd-bar
-    osd-bar=no
-
-    # uosc will draw its own window controls and border if you disable window border
-    border=no
-    ```
-
-3. **OPTIONAL**: To have thumbnails in timeline, install [thumbfast](https://github.com/po5/thumbfast). No other step necessary, **uosc** integrates with it seamlessly.
-
-4. **OPTIONAL**: If the UI feels sluggish/slow while playing video, you can remedy this _a bit_ by placing this in your `mpv.conf`:
+3. **OPTIONAL**: If the UI feels sluggish/slow while playing video, you can remedy this _a bit_ by placing this in your `mpv.conf`:
 
     ```config
     video-sync=display-resample
